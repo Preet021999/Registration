@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_r">
+
+            <TextView
+                android:id="@+id/vName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=": Vehical Name  :"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.447"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.057" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/vName"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="@+id/vName"
+                app:layout_constraintTop_toBottomOf="@+id/vName" />
+
+
+            <TextView
+                android:id="@+id/vNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:text=":  Vehical Number  :"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText"
+                app:layout_constraintVertical_bias="0.012" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+
+                app:layout_constraintEnd_toEndOf="@+id/vNumber"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="@+id/vNumber"
+                app:layout_constraintTop_toBottomOf="@+id/vNumber" />
+
+
+            <TextView
+                android:id="@+id/LicenseNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=":  License No  :"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/editText2"
+                app:layout_constraintStart_toStartOf="@+id/editText2"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/LicenseNo"
+                app:layout_constraintStart_toStartOf="@+id/LicenseNo"
+                app:layout_constraintTop_toBottomOf="@+id/LicenseNo" />
+
+            <TextView
+                android:id="@+id/vNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=":  RC-BOOK No  :"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/editText3"
+                app:layout_constraintStart_toStartOf="@+id/editText3"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/vNumber2"
+                app:layout_constraintStart_toStartOf="@+id/vNumber2"
+                app:layout_constraintTop_toBottomOf="@+id/vNumber2" />
+
+            <TextView
+                android:id="@+id/AddharNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=":  Addhar-Card No :"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                app:layout_constraintVertical_bias="0.039" />
+
+            <EditText
+                android:id="@+id/AddharNo2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/AddharNo"
+                app:layout_constraintStart_toStartOf="@+id/AddharNo"
+                app:layout_constraintTop_toBottomOf="@+id/AddharNo" />
+
+            <TextView
+                android:id="@+id/Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=":  Insurance No :"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/AddharNo2"
+                app:layout_constraintStart_toStartOf="@+id/AddharNo2"
+                app:layout_constraintTop_toBottomOf="@+id/AddharNo2" />
+
+            <EditText
+                android:id="@+id/Insurance2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/Insurance"
+                app:layout_constraintStart_toStartOf="@+id/Insurance"
+                app:layout_constraintTop_toBottomOf="@+id/Insurance" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="SUBMIT"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/Insurance2"
+                app:layout_constraintStart_toStartOf="@+id/Insurance2"
+                app:layout_constraintTop_toBottomOf="@+id/Insurance2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
